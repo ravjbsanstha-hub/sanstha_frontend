@@ -1,0 +1,317 @@
+/* Donate Hero */
+.donate-hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+  padding: 6rem 0 4rem;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.donate-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Donate Content */
+.donate-content {
+  padding: 4rem 0;
+  background: var(--bg-light);
+}
+
+.donate-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Form Section */
+.form-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+.form-card h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-intro {
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.donation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.amount-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.amount-label {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.preset-amounts {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.amount-btn {
+  background: white;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.amount-btn:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.amount-btn.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Impact Section */
+.impact-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+.impact-card h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.impact-intro {
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.impact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.impact-item {
+  padding: 1.5rem;
+  background: var(--bg-light);
+  border-radius: 12px;
+  border-left: 4px solid var(--secondary-color);
+}
+
+.impact-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.impact-description {
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Other Ways to Give */
+.other-ways {
+  margin-bottom: 3rem;
+}
+
+.other-ways h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.giving-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.giving-option {
+  padding: 1.5rem;
+  background: var(--bg-light);
+  border-radius: 12px;
+}
+
+.giving-option h4 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.giving-option p {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Contact Info */
+.contact-info h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .donate-hero {
+    padding: 4rem 0 3rem;
+  }
+
+  .donate-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+  }
+
+  .donate-content {
+    padding: 3rem 0;
+  }
+
+  .donate-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .form-card,
+  .impact-card {
+    padding: 2rem;
+  }
+
+  .form-card h2,
+  .impact-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .preset-amounts {
+    gap: 0.75rem;
+  }
+
+  .amount-btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    min-width: 80px;
+  }
+
+  .impact-amount {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .donate-hero {
+    padding: 3rem 0 2rem;
+  }
+
+  .donate-hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .donate-content {
+    padding: 2rem 0;
+  }
+
+  .form-card,
+  .impact-card {
+    padding: 1.5rem;
+  }
+
+  .form-card h2,
+  .impact-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .preset-amounts {
+    flex-direction: column;
+  }
+
+  .amount-btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .submit-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .impact-item {
+    padding: 1rem;
+  }
+
+  .impact-amount {
+    font-size: 1.2rem;
+  }
+
+  .giving-option {
+    padding: 1rem;
+  }
+
+  .giving-option h4 {
+    font-size: 1.1rem;
+  }
+
+  .other-ways h3,
+  .contact-info h3 {
+    font-size: 1.3rem;
+  }
+}
